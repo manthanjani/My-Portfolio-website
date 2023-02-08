@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manthan Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/93bb0ceb1d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="m.png" alt="M" width="45" height="35  " class="Mj align-text-top " style="margin-right: 15px;">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hey there,<br>I am <span style="color: #ff004f;">Manthan</span> Jani</h1>
+        
+            </div>
+        </div>
+    </div>
+<!-- -------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="abHeader">About Me</h1>
+                </div>
+                <div class="row">
+                    <p class="paraone">I completed my 10th grade and 12th grade (science stream) from the Gujarat Secondary and Higher Secondary Education Board in 2017 and 2019 with 79.8 % and 75.0 % respectively. Also, I held the position among top achievers. I further enrolled in the Bachelor of Computer Engineering from Charotar University of Science and Technology (accredited A+ by NAAC) and scored an overall 9.2 CGPA for the first six semesters and I am currently in my fourth year. In the academic year 2020 I had made a project named “Face Mask Recognition”. It was basically an ML-based real-time machine learning model using a Convolutional neural network and MobileNetV2 which detects masks. It functions as we run the program, a camera will be opened and it will detect a face. If the person is wearing a mask, then a green box will appear on the face and accuracy will be visible at the bottom of that box. And if the person is not wearing a mask a red box will appear on his face. The accuracy of the Model is approximately 98%. In addition to that, I made various Machine Learning models on different datasets and gained practical and statistical knowledge about regression, classification and clustering. Meanwhile, I also got an opportunity to gain work experience during my second year for three months. I worked at Holofuse Technologies at Nanded as a Unity 3D developer under IT department. I had to create the game Backend, design levels, and User Interface. </p>
+                    <p class="paratwo">
+                        Not only this, but I am also indulged in extra-curricular activities like sports, football in particular. To add to this, I was also a part of the university football team and played various tournaments. During my academics I took online certification courses regarding Machine Learning and Data Science and learned many things. Finally, I would like to make my career in the field of Data Science/Machine Learning in the coming future.
+                    </p>
+                    <p class="paratwo">
+                        Checkout my projects <a href="#projects" style="color: #ff004f;">here</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- -------------projects------------- -->
+    <div id="projects">
+        <div class="container">
+            
+            <h1 class="abHeader">
+                 My Projects
+            </h1>
+            <div class="project-list">
+                 <div>
+                    <i class="fa-solid fa-mask-face"></i>
+                    <h2>Face-Mask Recognition </h2>
+                    <p class="projectP"> Pandas, Numpy, MobileNetV2</p>
+                    <a target="_blank" href="https://github.com/manthanjani/FaceMaskDetection">Learn More</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h2>Heart-Attack Prediction</h2>
+                    <p class="projectP"> Pandas, Numpy, Matplotlib, sklearn</p>
+                    <a target="_blank" href="https://github.com/manthanjani/Heart_Attack_Prediction">Learn More</a>
+                 </div>
+                  <div>
+                    <i class="fa-solid fa-gamepad">
+                    </i>
+                    <h2>3D Car Racing Game</h2>
+                    <p class="projectP"> Unity3D, C#</p>
+                    <a target="_blank" href="https://github.com/manthanjani/3D_Car_Racing_Game">Learn More</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------skills---------------- -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="tech-skills">
+                
+                <div>
+                <h2>Technical Skills</h2>
+                
+                <ul >
+                    <li class="ts">Python</li>
+                    <li class="ts">Java</li>
+                    <li class="ts">Unity, C#</li>
+                    <li class="ts">Tableau</li>
+                    <li class="ts">HTML, CSS, JS</li>
+                
+                </ul>
+            </div>
+            
+                
+            <div>
+                 <h2 class="sub-title">Soft Skills</h2>
+                 
+                <ul >
+                    <li class="ts">Brainstorming</li>
+                    <li class="ts">Communication</li>
+                    <li class="ts">Presentation</li>
+                    <li class="ts">Time Management</li>
+                    
+                
+                </ul>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- ---------------Contact-------------------- -->
+<div id="contact">
+    <div class="container">
+        <!-- <div class="row"> -->
+            <h1 class="sub-title">Contact Me</h1>
+       
+       <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Enter Your Name" required>
+            <input type="email" name="Email" placeholder="Enter Your Email" required>
+            <textarea name="Message" id="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn3 ">Submit</button>
+        </form>
+        <span id="msg"></span>
+        </div>
+
+        <h2 class="reach-out">Reach Out To Me </h2>
+
+        <div class="contact-left">
+        
+       
+            <p> <i class="fa-solid fa-envelope"></i>  manthanjani87@gmail.com</p>
+            <p> <i class="fa-solid fa-phone"></i> 
+                +91 9727776904</p>
+            <div class="social-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/manthan-jani-425134215/"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://twitter.com/ManthanJani17"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/manthann_9/"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://github.com/manthanjani"><i class="fa-brands fa-github"></i></a>
+                
+            </div>
+            <a href="Manthan_Jani_resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+         
+       
+    </div>
+    
+</div>
+<div class="copyright">
+    <p>Copyright @ ManthanJani. Made with <i class="fa-solid fa-heart"></i></p>
+</div>
+
+<script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+      
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyYejDV1JdEZ-yU_KC42J9QgnTO-4foW-CrJDZVRKp84tDhjlLPxHCUA3P4UMFPWRFw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Your message has been received"; 
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },3000) 
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
